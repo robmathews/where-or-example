@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20151012084449) do
 
   create_table "offers", force: :cascade do |t|
     t.integer  "product_id"
-    t.decimal  "amount",     default: 0.0,   null: false
+    t.decimal  "amount",     default: "0.0", null: false
     t.boolean  "legitimate", default: false, null: false
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
